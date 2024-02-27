@@ -1,7 +1,13 @@
-start = int(input("Please enter a starting number."))
-stop = int(input("Please enter a ending number."))
-
-number_range = range(start,stop)
+import random
 
 
-print(number_range)
+start = int(input("Please enter the min number in the range.\n " ))
+stop = int(input("Please enter the max number in the range.\n " ))
+
+
+
+#random.randint(start, stop)
+computer_number = random.randint(start,stop)
+
+
+print(computer_number)
