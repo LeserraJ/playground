@@ -11,6 +11,9 @@ user_throw = (input("What do you want to throw?\n Rock, Paper, or Scissor?\n"))
 
 
 
+
+
+
 #Rock functionality
 def rock_function():
     if user_throw == throws[0] and comp_throw == throws[0]:
@@ -46,8 +49,10 @@ if user_throw == throws[0]:
     rock_function()
 elif user_throw == throws[1]:
     paper_function()
-else:
+elif user_throw == throws[2]:
     scissor_function()
+else:
+    print("No Choice")
 
     
 
@@ -59,5 +64,3 @@ else:
 
 
 
-
-print(comp_throw)
