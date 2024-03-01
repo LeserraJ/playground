@@ -10,10 +10,6 @@ comp_throw = random.choice(throws)
 user_throw = (input("What do you want to throw?\n Rock, Paper, or Scissor?\n"))
 
 
-
-
-
-
 #Rock functionality
 def rock_function():
     if user_throw == throws[0] and comp_throw == throws[0]:
@@ -54,7 +50,6 @@ elif user_throw == throws[2]:
 else:
     print("No Choice")
 
-    
 
 
 
