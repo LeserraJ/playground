@@ -8,10 +8,10 @@ comp_throw = random.choice(throws)
 
 #user choice
 user_throw = (input("What do you want to throw?\n Rock, Paper, or Scissor?\n"))
-#print("%s is %d years old" %(name, age)) # John is 80 years old
+
+
 
 #Rock functionality
-
 def rock_function():
     if user_throw == throws[0] and comp_throw == throws[0]:
         print("tie")
@@ -38,8 +38,6 @@ def scissor_function():
         print("lose")
     else:
         print("win")
-
-
 
 
 
