@@ -5,13 +5,16 @@ tasks = input("Enter Item Here. \n")
 todoList = {tasks}
 
 
-user_change = input("Would you like to make a change? Yes or No?\n")
+userInput = input("Would you like to add or remove an item? Add or Remove?\n")
 
 
 def remove_function(): 
-    print("Here are the Items:\n", tasks)
+    #print("Here are the Items:\n", tasks)
     removeTask = todoList.remove(input("Which Item to Remove? \n"))
-    return todoList
+    #return todoList
+    
+
+     
    
 def add_function():
     #print("Here are the current Items:\n", tasks)
@@ -20,14 +23,24 @@ def add_function():
 
 
 
-while user_change.upper() == "YES":
+while userInput.upper() == "ADD":
     add_function()
     addMore = input("Add More Items?\n Yes or No? \n")
     print(todoList)
     if addMore.upper() == "NO":
-        break
+        userInput = input("Would you like to add or remove an item? Add or Remove?\n")
 
 
+
+
+while userInput.upper() == "REMOVE":
+    remove_function()
+    removeMore = input("Remove More Items?\n Yes or No? \n")
+    print(todoList)
+    if todoList == set():
+        print("Nothing to remove.")
+    if removeMore.upper() == "NO":
+        userInput = input("Would you like to add or remove an item? Add or Remove?\n")
 
 
 
